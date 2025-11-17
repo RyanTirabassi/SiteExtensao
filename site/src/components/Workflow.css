@@ -1,0 +1,8 @@
+.workflow{ background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent); padding:60px 0; color: #dfeeff; }
+.workflow h3{ text-align:center; margin-bottom:18px; }
+.steps{ display:flex; gap:14px; flex-wrap:wrap; justify-content:center; margin-top:18px; }
+.step{ width:220px; padding:18px; border-radius:12px; background:#0f1113; border:1px solid rgba(255,255,255,0.02); text-align:center; transition: transform .2s; }
+.step:hover{ transform: translateY(-6px); border-color: rgba(97,218,251,0.12); box-shadow: 0 12px 30px rgba(100,108,255,0.04); }
+.step-num{ width:44px; height:44px; border-radius:8px; margin:0 auto 10px; display:flex; align-items:center; justify-content:center; background:linear-gradient(90deg,var(--accent2),var(--accent1)); color:#07101a; font-weight:700; }
+.step p{ color:var(--muted); font-size:14px; }
+

@@ -1,0 +1,29 @@
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 2rem;
+}
+
+.card {
+  background: #18181c;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: 0.3s;
+  text-align: left;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: var(--blue);
+  box-shadow: 0 0 15px rgba(97, 218, 251, 0.1);
+}
+
+.icon {
+  color: var(--purple);
+  height: 2rem;
+  margin-bottom: 0.5rem;
+}

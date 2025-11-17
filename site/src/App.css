@@ -1,0 +1,79 @@
+:root{
+  --nav-height: 68px;
+}
+
+/* Layout base */
+.app-root {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Ajuste para que o conteúdo não esteja por baixo do header */
+main {
+  padding-top: calc(var(--nav-height)); /* garante espaço maior que a navbar */
+  padding-bottom: 120px;
+  z-index: 50;
+  position: relative;
+}
+
+/* Logo fixa (pequena) ajustada para não invadir o header */
+.logo-glow {
+  position: fixed;
+  top: calc(var(--nav-height) + 25px); /* fica abaixo da navbar */
+  left: 24px;
+  width: 62px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 26px rgba(100,108,255,0.7);
+  z-index: 300;
+  animation: float 4s ease-in-out infinite;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+.logo-glow:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 0 40px rgba(100,108,255,0.9);
+}
+
+/* Títulos */
+h1 { font-size: 2.8rem; margin: 0 0 12px; }
+.hero-lead { color: #bfcfe0; margin-bottom: 20px; }
+
+/* Workflow (Como Funciona) bloco com z-index alto para aparecer */
+.workflow-section {
+  position: relative;
+  z-index: 60;
+  background: rgba(18,18,24,0.72);
+  border-radius: 18px;
+  margin: 5rem auto;
+  padding: 28px;
+  max-width: 980px;
+}
+
+/* footer */
+footer { z-index: 50; }
+
+/* responsividade */
+@media (max-width: 900px) {
+  main { padding-top: calc(var(--nav-height) + 56px); }
+  .logo-glow { left: 16px; width: 52px; top: calc(var(--nav-height) + 10px); }
+}
+
+@media (max-width: 520px) {
+  main { padding-top: calc(var(--nav-height) + 70px); }
+  .logo-glow { width: 44px; left: 14px; }
+  h1 { font-size: 1.9rem; }
+}
+
+
+
+
+
+

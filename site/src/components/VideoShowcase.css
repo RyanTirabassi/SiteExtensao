@@ -1,0 +1,17 @@
+.video-show{ padding:80px 0; text-align:center; }
+.video-title{ margin-bottom:18px; font-size:20px; color:#dff4ff; }
+.video-wrap{ display:flex; justify-content:center; }
+.video-box{
+  width:880px; max-width:95%; height:480px; border-radius:16px;
+  background: linear-gradient(180deg,#111114,#0a0a0d);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+  border:1px solid rgba(255,255,255,0.03); display:flex; align-items:center; justify-content:center; position:relative;
+}
+.play-circle{
+  width:120px; height:120px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--accent1);
+  background: radial-gradient(circle at 35% 30%, rgba(97,218,251,0.18), rgba(100,108,255,0.06));
+  font-size:34px; box-shadow: 0 12px 40px rgba(100,108,255,0.08); transition: transform .18s;
+}
+.play-circle:hover { transform: scale(1.08); }
+.video-desc{ color:var(--muted); margin-top:12px; }
+
