@@ -1,0 +1,217 @@
+.git-page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.git-content {
+  position: relative;
+  z-index: 1;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.git-container {
+  max-width: 900px;
+  width: 100%;
+  background: rgba(10, 10, 26, 0.85);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(136, 170, 255, 0.2);
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.git-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 50px;
+  background: linear-gradient(135deg, #88aaff 0%, #ffaaff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 40px rgba(136, 170, 255, 0.3);
+}
+
+.git-section {
+  margin-bottom: 40px;
+}
+
+.git-section h2 {
+  font-size: 2rem;
+  color: #88aaff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.git-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #d0d0e8;
+  margin-bottom: 15px;
+}
+
+.git-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0;
+}
+
+.git-section ul li {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #d0d0e8;
+  margin-bottom: 12px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.git-section ul li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #88aaff;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.git-section strong {
+  color: #ffaaff;
+  font-weight: 600;
+}
+
+.concept {
+  background: rgba(136, 170, 255, 0.05);
+  border-left: 4px solid #88aaff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.concept:hover {
+  background: rgba(136, 170, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.concept h3 {
+  font-size: 1.4rem;
+  color: #88aaff;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.concept p {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.benefit-card {
+  background: rgba(136, 170, 255, 0.08);
+  border: 1px solid rgba(136, 170, 255, 0.2);
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  background: rgba(136, 170, 255, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(136, 170, 255, 0.2);
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.benefit-card h4 {
+  font-size: 1.3rem;
+  color: #88aaff;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.benefit-card p {
+  font-size: 0.95rem;
+  color: #b0b0c8;
+  margin: 0;
+}
+
+.git-footer {
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(136, 170, 255, 0.2);
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #b0b0c8;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .git-container {
+    padding: 30px 25px;
+  }
+
+  .git-title {
+    font-size: 2.5rem;
+  }
+
+  .git-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .git-section p,
+  .git-section ul li {
+    font-size: 1rem;
+  }
+
+  .benefits {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .git-content {
+    padding: 40px 15px;
+  }
+
+  .git-container {
+    padding: 25px 20px;
+  }
+
+  .git-title {
+    font-size: 2rem;
+  }
+}

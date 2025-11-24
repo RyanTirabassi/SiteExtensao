@@ -1,0 +1,460 @@
+.getting-started-content {
+  position: relative;
+  z-index: 1;
+  padding: 100px 60px 80px;
+  min-height: 100vh;
+  background: transparent;
+}
+
+.getting-started-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header */
+.gs-header {
+  margin-bottom: 60px;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gs-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+}
+
+.gs-subtitle {
+  font-size: 1.15rem;
+  color: #a0a0b0;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* Timeline Steps */
+.gs-timeline {
+  margin-bottom: 80px;
+  animation: fadeInUp 1s ease-out 0.2s backwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gs-steps-container {
+  space-y: 1rem;
+}
+
+.gs-step-group {
+  margin-bottom: 1rem;
+}
+
+.gs-step-card {
+  width: 100%;
+  background: linear-gradient(135deg, rgba(30, 40, 75, 0.6) 0%, rgba(20, 30, 60, 0.4) 100%);
+  border: 1px solid rgba(100, 150, 255, 0.2);
+  border-radius: 12px;
+  padding: 24px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: left;
+}
+
+.gs-step-card:hover {
+  background: linear-gradient(135deg, rgba(40, 50, 85, 0.8) 0%, rgba(30, 40, 70, 0.6) 100%);
+  border-color: rgba(100, 150, 255, 0.5);
+  box-shadow: 0 8px 32px rgba(100, 150, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.gs-step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.gs-step-content {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.gs-step-number {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6495ff 0%, #00d9ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.gs-step-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+}
+
+.gs-step-desc {
+  font-size: 0.95rem;
+  color: #a0a0b0;
+  margin: 0;
+}
+
+.gs-chevron {
+  font-size: 1.5rem;
+  color: #6495ff;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.gs-chevron.rotated {
+  transform: rotate(180deg);
+}
+
+/* Expanded Details */
+.gs-step-details {
+  margin-top: 16px;
+  margin-left: 56px;
+  padding: 20px;
+  background: rgba(20, 30, 60, 0.5);
+  border-left: 3px solid #6495ff;
+  border-radius: 8px;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gs-detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.gs-detail-item:last-child {
+  margin-bottom: 0;
+}
+
+.gs-check {
+  color: #4ade80;
+  font-weight: bold;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.gs-detail-text {
+  color: #d0d8e8;
+  line-height: 1.5;
+}
+
+/* Code Section */
+.gs-code-section {
+  background: linear-gradient(180deg, rgba(15, 20, 45, 0.8) 0%, rgba(20, 25, 55, 0.6) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 80px;
+  animation: fadeInUp 1s ease-out 0.4s backwards;
+}
+
+.gs-section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 30px 0;
+  letter-spacing: -0.5px;
+}
+
+.gs-code-block {
+  background: #0a0f28;
+  border: 1px solid rgba(100, 200, 255, 0.15);
+  border-radius: 12px;
+  padding: 24px;
+  overflow-x: auto;
+  position: relative;
+}
+
+.gs-code-block::before {
+  content: '● ● ●';
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  color: #444;
+  font-size: 0.8rem;
+  letter-spacing: 4px;
+}
+
+.gs-code-content {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: #a0d0ff;
+  margin: 0;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+/* Tips Section */
+.gs-tips-section {
+  margin-bottom: 80px;
+  animation: fadeInUp 1s ease-out 0.6s backwards;
+}
+
+.gs-tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.gs-tip-card {
+  padding: 28px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.gs-tip-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+.gs-tip-blue {
+  background: rgba(100, 150, 255, 0.1);
+  border-color: rgba(100, 150, 255, 0.3);
+}
+
+.gs-tip-blue:hover {
+  background: rgba(100, 150, 255, 0.15);
+  border-color: rgba(100, 150, 255, 0.5);
+}
+
+.gs-tip-green {
+  background: rgba(74, 222, 128, 0.1);
+  border-color: rgba(74, 222, 128, 0.3);
+}
+
+.gs-tip-green:hover {
+  background: rgba(74, 222, 128, 0.15);
+  border-color: rgba(74, 222, 128, 0.5);
+}
+
+.gs-tip-purple {
+  background: rgba(168, 85, 247, 0.1);
+  border-color: rgba(168, 85, 247, 0.3);
+}
+
+.gs-tip-purple:hover {
+  background: rgba(168, 85, 247, 0.15);
+  border-color: rgba(168, 85, 247, 0.5);
+}
+
+.gs-tip-orange {
+  background: rgba(249, 115, 22, 0.1);
+  border-color: rgba(249, 115, 22, 0.3);
+}
+
+.gs-tip-orange:hover {
+  background: rgba(249, 115, 22, 0.15);
+  border-color: rgba(249, 115, 22, 0.5);
+}
+
+.gs-tip-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+}
+
+.gs-tip-blue .gs-tip-title {
+  color: #6495ff;
+}
+
+.gs-tip-green .gs-tip-title {
+  color: #4ade80;
+}
+
+.gs-tip-purple .gs-tip-title {
+  color: #a855f7;
+}
+
+.gs-tip-orange .gs-tip-title {
+  color: #f97316;
+}
+
+.gs-tip-text {
+  font-size: 0.95rem;
+  color: #d0d8e8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* CTA Section */
+.gs-cta-section {
+  background: linear-gradient(135deg, rgba(100, 150, 255, 0.1) 0%, rgba(0, 217, 255, 0.05) 100%);
+  border: 1px solid rgba(100, 150, 255, 0.2);
+  border-radius: 16px;
+  padding: 60px;
+  text-align: center;
+  animation: fadeInUp 1s ease-out 0.8s backwards;
+}
+
+.gs-cta-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 16px 0;
+}
+
+.gs-cta-text {
+  font-size: 1.1rem;
+  color: #a0a0b0;
+  margin: 0 0 32px 0;
+}
+
+.gs-cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gs-btn {
+  padding: 14px 32px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gs-btn-primary {
+  background: linear-gradient(135deg, #6495ff 0%, #00d9ff 100%);
+  color: white;
+}
+
+.gs-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(100, 150, 255, 0.4);
+}
+
+.gs-btn-secondary {
+  background: rgba(100, 150, 255, 0.2);
+  color: #6495ff;
+  border: 1px solid rgba(100, 150, 255, 0.5);
+}
+
+.gs-btn-secondary:hover {
+  background: rgba(100, 150, 255, 0.3);
+  border-color: rgba(100, 150, 255, 0.8);
+  transform: translateY(-2px);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .getting-started-content {
+    padding: 80px 20px 60px;
+  }
+
+  .gs-title {
+    font-size: 2.2rem;
+  }
+
+  .gs-header {
+    margin-bottom: 40px;
+  }
+
+  .gs-timeline {
+    margin-bottom: 60px;
+  }
+
+  .gs-code-section {
+    padding: 24px;
+    margin-bottom: 60px;
+  }
+
+  .gs-section-title {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  .gs-step-card {
+    padding: 16px;
+  }
+
+  .gs-step-header {
+    flex-direction: column;
+  }
+
+  .gs-chevron {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+  }
+
+  .gs-step-details {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+
+  .gs-code-content {
+    font-size: 0.8rem;
+  }
+
+  .gs-tips-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gs-cta-section {
+    padding: 40px 20px;
+  }
+
+  .gs-cta-title {
+    font-size: 1.8rem;
+  }
+
+  .gs-cta-buttons {
+    flex-direction: column;
+  }
+
+  .gs-btn {
+    width: 100%;
+  }
+}

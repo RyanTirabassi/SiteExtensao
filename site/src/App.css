@@ -12,17 +12,17 @@
 /* Ajuste para que o conteúdo não esteja por baixo do header */
 main {
   padding-top: calc(var(--nav-height)); /* garante espaço maior que a navbar */
-  padding-bottom: 120px;
+  
   z-index: 50;
   position: relative;
 }
 
 /* Logo fixa (pequena) ajustada para não invadir o header */
 .logo-glow {
-  position: fixed;
+  position: absolute;
   top: calc(var(--nav-height) + 25px); /* fica abaixo da navbar */
   left: 24px;
-  width: 62px;
+  width: 100px;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 0 26px rgba(100,108,255,0.7);

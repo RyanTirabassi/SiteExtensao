@@ -1,0 +1,62 @@
+.timeline-item {
+  display: grid;
+  grid-template-columns: 120px 1fr 100px;
+  gap: 16px;
+  padding: 16px;
+  border-bottom: 1px solid #3e3e42;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.timeline-item:hover {
+  background: rgba(0, 122, 204, 0.05);
+}
+
+.timeline-item:last-child {
+  border-bottom: none;
+}
+
+.timeline-time {
+  font-size: 12px;
+  color: #858585;
+  font-family: 'Fira Code', 'Courier New', monospace;
+}
+
+.timeline-message {
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.timeline-message-sub {
+  font-size: 12px;
+  color: #858585;
+  margin-top: 4px;
+}
+
+.timeline-status {
+  text-align: right;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.status-badge.success {
+  background: rgba(78, 201, 176, 0.2);
+  color: #4ec9b0;
+}
+
+.status-badge.failed {
+  background: rgba(244, 135, 113, 0.2);
+  color: #f48771;
+}
+
+.status-badge.pending {
+  background: rgba(0, 122, 204, 0.2);
+  color: #007acc;
+}
