@@ -8,7 +8,7 @@ const Dashboard = () => {
   const stats = [
     { label: 'TOTAL DE DEPLOYS', value: '42', change: '↑ 5 neste mês', color: '#00d9ff' },
     { label: 'TAXA DE SUCESSO', value: '95.2%', change: '↑ 2.1% vs mês anterior', color: '#4ade80' },
-    { label: 'TEMPO MÉDIO', value: '1m 23s', change: '↓ 15s mais lento', color: '#f97316' },
+    { label: 'TEMPO MÉDIO', value: '30 segundos', change: '↓ 15s mais lento', color: '#f97316' },
     { label: 'DEPLOY ATIVO', value: 'v2.3.1', change: 'Deploy: há 2 dias', color: '#a855f7' }
   ];
 

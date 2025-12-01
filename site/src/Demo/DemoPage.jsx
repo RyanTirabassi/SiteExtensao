@@ -15,7 +15,7 @@ const DemoPage = () => {
             <div>
               <h1 className="demo-title">Demonstração em Vídeo</h1>
               <p className="demo-subtitle">
-                Acompanhe todo o fluxo de deployment automático, desde o commit até a aplicação em produção. 
+                Acompanhe todo o fluxo de deploy automático, desde o commit até a aplicação em produção. 
                 Veja como GitHub Actions e Vercel trabalham juntos para entregar código com confiança.
               </p>
             </div>
@@ -58,7 +58,7 @@ const DemoPage = () => {
           {/* Stats */}
           <div className="stats-section">
             <div className="stat-card">
-              <div className="stat-number">1min</div>
+              <div className="stat-number">10seg</div>
               <div className="stat-label">Tempo de Deploy</div>
             </div>
             <div className="stat-card">

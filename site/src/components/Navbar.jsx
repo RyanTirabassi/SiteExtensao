@@ -9,7 +9,7 @@ function Navbar() {
       <div className="navbar-left">
         <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '10px' }}>
           <img src={logopng} alt="Logo animada" />
-          <h1>Deploy Automático</h1>
+          <h1>Deployly</h1>
         </Link>
       </div>
       <div className="navbar-right">
